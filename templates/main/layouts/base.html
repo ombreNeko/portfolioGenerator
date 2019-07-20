@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <style>
+        nav {
+            color: teal;
+            background-color: black;
+            width: 100%;
+            height: 56px;
+            line-height: 56px;
+        }
+
+        nav ul a {
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            font-size: 1rem;
+            color: teal;
+            display: block;
+            padding: 0 15px;
+            cursor: pointer;
+            }
+
+        .row .col {
+            float: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            min-height: 1px;
+
+        }
+
+        .heading{
+        font-size: 70px;
+        vertical-align: middle;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        color: white;
+        background-color: black;
+        text-align: center
+        }
+
+        .card-panel {
+            -webkit-transition: -webkit-box-shadow .25s;
+            transition: -webkit-box-shadow .25s;
+            transition: box-shadow .25s;
+            transition: box-shadow .25s, -webkit-box-shadow .25s;
+            padding: 24px;
+            margin: 0.5rem 0 1rem 0;
+            border-radius: 10px;
+            border-color: black;
+            background-color: #fff;
+        }
+
+        .page-footer {
+            padding-top: 20px;
+            color: teal;
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- navbar -->
+<div class="container">
+        <footer class="page-footer">
+
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo" style="color: teal ; padding-left: 10px ;">OmbreNeko</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="skills/">Skills</a></li>
+            <li><a href="projects/">Projects</a></li>
+            <li><a href="education/">Education</a></li>
+            <li><a href="achievements/">Achievements</a></li>
+            
+          </ul>
+        </div>
+    </nav>
+
+
+
+{% block content %}
+
+
+
+{% endblock %}
+
+<div class="row">
+        <div class="col l6 s12">
+          <h5 class="teal-text">Footer Content</h5>
+          <p class="teal-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="teal-text">Links</h5>
+          <ul>
+            <li><a class="teal-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="teal-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="teal-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="teal-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    </footer>
+</div>
+
+
+</body>
+</html>

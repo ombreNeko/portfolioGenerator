@@ -1,0 +1,31 @@
+{% extends 'main/layouts/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %} 
+
+<div class="row">
+    
+    <div class=" col s8 m8">
+     <img  src=" {% static 'main/images/profile_pic.jpeg' %}" alt="cover">
+        
+    </div>
+    <!-- <div class="row"> -->
+        <div class="col s4 m4">
+            <div class="card-panel teal" style="margin-top: 50px; padding: 30px ;text-align: center; border-color: black">
+            <span class="black-text" style="font-size:50px;" ><b>DESIGNATION</b>
+            </span>
+            </div>
+        </div>
+    <!-- </div> -->
+
+    <div class="col s4 m4">
+        <div class="card-panel black">
+            <span style="color: teal">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
